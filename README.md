@@ -30,8 +30,8 @@ O objetivo deste portfólio é ser um cartão de visitas digital, demonstrando m
 * **`work.html`:** Lista os principais projetos que desenvolvi, com uma pré-visualização de cada um.
 * **`style.css`:** Arquivo de estilização principal que define a aparência do site.
 
-## 📫 Contato
+##  Contato
 
 * **GitHub:** [VinyWald](https://github.com/VinyWald)
 * **LinkedIn:** [Vinícius R. Assis](https://linkedin.com/in/vinícius-rodrigues-assis)
-* **Esse portófolio:** [Vinicius Wald](vinywald.github.io/portofolio)
+* **Esse portófolio:** [Vinicius Wald](https://vinywald.github.io/portofolio/)
