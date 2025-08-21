@@ -1,4 +1,4 @@
-# Portfólio Pessoal - Vinícius Wald
+# Portfólio Pessoal - Vinícius Wald 
 
 Este é o repositório do meu portfólio pessoal, um espaço onde apresento minha jornada como desenvolvedor full-stack, meus projetos e minhas paixões, como a cibersegurança.
 
