@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="about_meta_title">Vinícius | Sobre</title>
+    <meta name="description" content="Saiba mais sobre Vinícius Wald, um desenvolvedor full-stack." data-key="about_meta_description">
+    <link type="image/png" sizes="16x16" rel="icon" href="./img/IconV.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="fonts/studio-feixen-sans-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        .social-icon-link {
+            color: var(--text-color);
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+        .social-icon-link:hover {
+            color: var(--text-color);
+            transform: scale(1.1);
+        }
+        .social-icon-link svg {
+            width: 32px;
+            height: 32px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+        .icon-link-with-text {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        .icon-text-label {
+            font-family: 'Trajan Pro', serif;
+            font-size: 1.1rem;
+            white-space: nowrap;
+            max-width: 0;
+            opacity: 0;
+            margin-left: 0;
+            transition: max-width 0.5s ease-out, opacity 0.4s ease-in, margin-left 0.5s ease-out;
+        }
+        .icon-link-with-text:hover .icon-text-label {
+            max-width: 250px;
+            opacity: 1;
+            margin-left: 0.75rem;
+        }
+        .chess-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+        .chess-info svg {
+            width: 28px;
+            height: 28px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body class="about-page dark-mode">
+    <header class="header-content">
+        <div class="left-part">
+            <a href="./index.html" class="logo">
+                <img src="./img/V.png" alt="Logo Vinicius Wald" class="logo-image">
+            </a>
+            <h5><span class="fullname" data-key="fullname">Vinícius Wald</span></h5>
+        </div>
+        <div class="right-part">
+            <div class="navbar-container">
+                <a href="#" id="lang-toggle" class="language-toggle">EN</a>
+                <label for="switch" class="toggle">
+                    <input type="checkbox" class="input" id="switch" checked />
+                    <div class="icon icon--moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd"></path></svg></div>
+                    <div class="icon icon--sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path></svg></div>
+                </label>
+                <div class="navbar-menu-container">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="custom-menu-content">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link" href="./work.html" data-key="nav_projects">Projetos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./about.html#sobre" data-key="nav_about">Sobre</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./about.html#contato" data-key="nav_contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input hidden class="sidebar-check" id="sidebar-check" name="sidebar-check" type="checkbox">
+                    <label class="sidebar-menu-toggle" for="sidebar-check" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent">
+                        <div class="sidebar-bar sidebar-bar--1"></div>
+                        <div class="sidebar-bar sidebar-bar--2"></div>
+                        <div class="sidebar-bar sidebar-bar--3"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="horizontal-scroll-container">
+        <section id="contato" class="page-section">
+            <div class="contact-content">
+                <h2 class="page-title" data-key="contact_title_section">Contato</h2>
+                <hr class="title-separator">
+                <p class="presentation-text" data-key="contact_intro_section">
+                    Fique à vontade para explorar meus perfis e projetos ou me enviar uma mensagem.
+                </p>
+                <div class="intro-links" style="gap: 2.5rem; align-items: center;">
+                    <a href="https://github.com/VinyWald" target="_blank" rel="noopener noreferrer" class="social-icon-link icon-link-with-text" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24"><path d="M12,2A10,10,0,0,0,2,12C2,16.42,4.87,20.17,8.84,21.5C9.34,21.58,9.5,21.27,9.5,21C9.5,20.77,9.5,20.14,9.5,19.31C6.73,19.91,6.14,17.97,6.14,17.97C5.68,16.81,5.03,16.5,5.03,16.5C4.12,15.88,5.1,15.9,5.1,15.9C6.1,15.97,6.63,16.93,6.63,16.93C7.5,18.45,8.97,18,9.54,17.76C9.63,17.11,9.89,16.67,10.17,16.42C7.95,16.17,5.62,15.31,5.62,11.5C5.62,10.39,6,9.5,6.65,8.79C6.55,8.54,6.2,7.5,6.75,6.15C6.75,6.15,7.59,5.88,9.5,7.17C10.29,6.95,11.15,6.84,12,6.84C12.85,6.84,13.71,6.95,14.5,7.17C16.41,5.88,17.25,6.15,17.25,6.15C17.8,7.5,17.45,8.54,17.35,8.79C18,9.5,18.38,10.39,18.38,11.5C18.38,15.32,16.04,16.16,13.81,16.41C14.17,16.72,14.5,17.33,14.5,18.26C14.5,19.6,14.5,20.68,14.5,21C14.5,21.27,14.66,21.59,15.17,21.5C19.14,20.16,22,16.42,22,12A10,10,0,0,0,12,2Z"/></svg>
+                        <span class="icon-text-label">VinyWald</span>
+                    </a>
+                    <a href="https://linkedin.com/in/vinícius-rodrigues-assis" target="_blank" rel="noopener noreferrer" class="social-icon-link icon-link-with-text" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24"><path d="M19,3A2,2,0,0,1,21,5V19A2,2,0,0,1,19,21H5A2,2,0,0,1,3,19V5A2,2,0,0,1,5,3H19M18.5,18.5V13.2A3.26,3.26,0,0,0,15.24,9.94C14.39,9.94,13.4,10.46,12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8,13.54,12.17,14.31,12.17S15.69,12.8,15.69,13.57V18.5H18.5M6.88,8.56A1.68,1.68,0,0,0,8.56,6.88C8.56,6,7.78,5.2,6.88,5.2S5.2,6,5.2,6.88A1.68,1.68,0,0,0,6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"/></svg>
+                        <span class="icon-text-label">Vinícius R. Assis</span>
+                    </a>
+                    <a href="mailto:vinicius.assis.r@gmail.com" class="social-icon-link icon-link-with-text" aria-label="Email">
+                        <svg viewBox="0 0 24 24"><path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"/></svg>
+                        <span class="icon-text-label">vinicius.assis.r@gmail.com</span>
+                    </a>
+                </div>
+                <div class="chess-info">
+                    <i class="fa-solid fa-chess-bishop"></i>
+                    <p class="m-0" data-key="chess_info">Você pode me encontrar no Chess.com como ViniciusWald</p>
+                </div>
+                <div class="intro-links">
+                    <div class="link-wrapper2">
+                        <a href="./index.html" data-key="back_to_start">← Voltar para Início</a>
+                    </div>
+                    <div class="link-wrapper">
+                        <a href="#sobre" class="scroll-link" data-key="back_to_about">Voltar para Mim →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre" class="page-section">
+            <div class="about-wrapper">
+                <div class="about-left">
+                    <div class="page-title-container">
+                        <h2 class="page-title" data-key="about_title">Sobre Mim</h2>
+                        <hr class="title-separator">
+                    </div>
+                    <p class="presentation-text" data-key="about_text">
+                        Olá! Meu nome é Vinícius, um desenvolvedor de Minas Gerais apaixonado por descobrir o mundo. Sou um profissional full-stack com grande interesse em tecnologia e cibersegurança. Fora do código, gosto de um bom jogo de pôquer, xadrez ou basquete. Este portfólio é uma amostra da minha jornada e dos projetos que construí.
+                    </p>
+                    <div class="intro-links">
+                        <div class="link-wrapper2">
+                            <a href="#contato" class="scroll-link" data-key="contact_link">← Entrar em contato</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a href="./img/curriculo.pdf" target="_blank" rel="noopener noreferrer" data-key="resume_link">↓ Veja meu Currículo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="profile-pic-container">
+                        <div class="profile-pic-wrapper">
+                            <img src="./img/perfil.jpeg" alt="Retrato de Vinícius Wald" class="profile-pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const themeSwitch = document.getElementById('switch');
+        if (themeSwitch) {
+            themeSwitch.checked = document.body.classList.contains('dark-mode');
+            themeSwitch.addEventListener('change', () => { document.body.classList.toggle('dark-mode'); });
+        }
+        document.querySelectorAll('a.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetElement = document.querySelector(this.getAttribute('href'));
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', inline: 'start' });
+                }
+            });
+        });
+        window.addEventListener('DOMContentLoaded', () => {
+            const sobreSection = document.getElementById('sobre');
+            if (sobreSection) {
+                sobreSection.scrollIntoView({ behavior: 'auto', inline: 'start' });
+            }
+        });
+        const langToggle = document.getElementById('lang-toggle');
+        const translations = {
+            en: {
+                about_meta_title: "Vinícius | About",
+                about_meta_description: "Learn more about Vinícius Wald, a full-stack developer.",
+                fullname: "Vinícius Wald",
+                nav_projects: "Projects",
+                nav_about: "About",
+                nav_contact: "Contact",
+                about_title: "About Me",
+                about_text: "Hi! My name is Vinícius, a developer from Minas Gerais, Brazil, with a passion for exploring the world. I am a full-stack professional with a great interest in technology and cybersecurity. Outside of coding, I enjoy a good game of poker, chess, or basketball. This portfolio is a showcase of my journey and the projects I have built.",
+                resume_link: "↓ View my CV",
+                contact_link: "← Get in touch",
+                contact_title_section: "Contact",
+                contact_intro_section: "Feel free to explore my profiles and projects or send me a message.",
+                chess_info: "You can find me on Chess.com as ViniciusWald",
+                back_to_start: "← Back to Home",
+                back_to_about: "Back to Me →"
+            },
+            pt: {
+                about_meta_title: "Vinícius | Sobre",
+                about_meta_description: "Saiba mais sobre Vinícius Wald, um desenvolvedor full-stack.",
+                fullname: "Vinícius Wald",
+                nav_projects: "Projetos",
+                nav_about: "Sobre",
+                nav_contact: "Contato",
+                about_title: "Sobre Mim",
+                about_text: "Olá! Meu nome é Vinícius, um desenvolvedor de Minas Gerais apaixonado por descobrir o mundo. Sou um profissional full-stack com grande interesse em tecnologia e cibersegurança. Fora do código, gosto de um bom jogo de pôquer, xadrez ou basquete. Este portfólio é uma amostra da minha jornada e dos projetos que construí.",
+                resume_link: "↓ Veja meu Currículo",
+                contact_link: "← Entrar em contato",
+                contact_title_section: "Contato",
+                contact_intro_section: "Fique à vontade para explorar meus perfis e projetos ou me enviar uma mensagem.",
+                chess_info: "Você pode me encontrar no Chess.com como ViniciusWald",
+                back_to_start: "← Voltar para Início",
+                back_to_about: "Voltar para Mim →"
+            }
+        };
+        function setLanguage(lang) {
+            const langPack = translations[lang] || translations.pt;
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (langPack[key]) {
+                    if (element.tagName === 'META') {
+                        element.setAttribute('content', langPack[key]);
+                    } else {
+                        element.innerHTML = langPack[key];
+                    }
+                }
+            });
+            document.documentElement.lang = lang;
+            document.title = langPack.about_meta_title;
+            langToggle.textContent = (lang === 'pt') ? 'EN' : 'PT';
+            localStorage.setItem('preferredLanguage', lang);
+        }
+        langToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const currentLang = document.documentElement.lang.startsWith('en') ? 'en' : 'pt';
+            const newLang = currentLang === 'en' ? 'pt' : 'en';
+            setLanguage(newLang);
+        });
+        const preferredLang = localStorage.getItem('preferredLanguage') || (navigator.language.startsWith('en') ? 'en' : 'pt');
+        setLanguage(preferredLang);
+    </script>
+</body>
+</html>
