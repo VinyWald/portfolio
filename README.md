@@ -34,4 +34,4 @@ O objetivo deste portfólio é ser um cartão de visitas digital, demonstrando m
 
 * **GitHub:** [VinyWald](https://github.com/VinyWald)
 * **LinkedIn:** [Vinícius R. Assis](https://linkedin.com/in/vinícius-rodrigues-assis)
-* **Esse portófolio:** [Vinicius Wald](https://vinywald.github.io/portofolio/)
+* **Esse portófolio:** [Vinicius Wald](https://vinywald.github.io/portfolio/)
