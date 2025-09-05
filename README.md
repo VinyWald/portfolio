@@ -1,4 +1,4 @@
-# Portfólio Pessoal - Vinícius Wald
+# Portfólio Pessoal - Vinícius Wald 
 
 Este é o repositório do meu portfólio pessoal, um espaço onde apresento minha jornada como desenvolvedor full-stack, meus projetos e minhas paixões, como a cibersegurança.
 
@@ -34,4 +34,4 @@ O objetivo deste portfólio é ser um cartão de visitas digital, demonstrando m
 
 * **GitHub:** [VinyWald](https://github.com/VinyWald)
 * **LinkedIn:** [Vinícius R. Assis](https://linkedin.com/in/vinícius-rodrigues-assis)
-* **Esse portófolio:** [Vinicius Wald](https://vinywald.github.io/portofolio/)
+* **Esse portófolio:** [Vinicius Wald](https://vinywald.github.io/portfolio/)
